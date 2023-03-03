@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Backgroun Origin </title>
+    <style>
+        /* background-origin 3 type */
+        /* 1. background-origin: border-box */
+        /* aama image ke koyi pan elemants hoy ene border ma ek background dekhay ena mate 6 */
+        /* 2. background-origin: padding-box */
+        /* aama div na bahar border ne lavi sakiye */
+        /* 3. background-origin: content-box */
+        /* aama text ke koi pan content ma je tame css aapyu hoy aave */
+        /*  */
+        /*  */
+        /* background-origin-border-box */
+        
+        .origin {
+            border: 30px solid rgba(133, 135, 133, .20);
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            background-size: 100% 100%;
+            color: #fff;
+            padding: 50px;
+            background-origin: border-box;
+        }
+        /*  */
+        /* background-origin-padding-box */
+        
+        .origin1 {
+            border: 30px solid rgba(0, 0, 0, .30);
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 50px;
+            background-origin: padding-box;
+            margin-top: 50px;
+        }
+        /*  */
+        /* background-origin-content-box */
+        
+        .origin2 {
+            border: 30px solid rgba(0, 0, 0, .30);
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 50px;
+            background-origin: content-box;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic repellendus laborum vero assumenda, similique harum odit. Possimus quod fugit fugiat ab aperiam ducimus, necessitatibus debitis rem? Suscipit in maxime error. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Hic repellendus laborum vero assumenda, similique harum odit. Possimus quod fugit fugiat ab aperiam ducimus, necessitatibus debitis rem? Suscipit in maxime error.
+    </div>
+
+    <div class="origin1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic repellendus laborum vero assumenda, similique harum odit. Possimus quod fugit fugiat ab aperiam ducimus, necessitatibus debitis rem? Suscipit in maxime error. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Hic repellendus laborum vero assumenda, similique harum odit. Possimus quod fugit fugiat ab aperiam ducimus, necessitatibus debitis rem? Suscipit in maxime error.
+    </div>
+    <div class="origin2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic repellendus laborum vero assumenda, similique harum odit. Possimus quod fugit fugiat ab aperiam ducimus, necessitatibus debitis rem? Suscipit in maxime error. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Hic repellendus laborum vero assumenda, similique harum odit. Possimus quod fugit fugiat ab aperiam ducimus, necessitatibus debitis rem? Suscipit in maxime error.
+    </div>
+</body>
+
+</html>

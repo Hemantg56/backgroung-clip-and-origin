@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Background clip </title>
+    <style>
+        /* background-clip 3 type  */
+        /* 1. border box (defolt) */
+        /* aama div na under border aave 6 */
+        /* 2. paddind box */
+        /* aama div na bahar border ne lavi sakiye */
+        /* 3. content box  */
+        /* aama text ke koi pan content ma je tame css aapyu hoy aave */
+        /*  */
+        /*  */
+        /* background-clip:border-box is defolt */
+        
+        .clip {
+            border: 20px solid rgba(0, 0, 0, .25);
+            background-color: lightcoral;
+            padding: 35px;
+            background-clip: border-box;
+        }
+        /*  */
+        /* backgrond-clip:padding-box */
+        
+        .clip1 {
+            border: 20px solid rgba(0, 0, 0, .25);
+            background-color: lightcoral;
+            padding: 35px;
+            background-clip: padding-box;
+            margin-top: 40px;
+        }
+        /*  */
+        /* background-clip: content-box */
+        
+        .clip2 {
+            border: 20px solid rgba(0, 0, 0, .10);
+            background-color: lightcoral;
+            padding: 35px;
+            background-clip: content-box;
+            margin-top: 40px;
+        }
+        
+        .box {
+            border: 20px solid black;
+            background: coral;
+            padding: 35px;
+            background-clip: content-box;
+        }
+        
+        .box .box1 {
+            border: 2px solid;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- background-clip:-border box -->
+    <div class="clip">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eveniet officia architecto nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eaque, eveniet officia architecto nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eveniet officia architecto
+        nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio.
+
+    </div>
+    <!--  -->
+    <!-- background-clip:-paddind box -->
+
+    <div class="clip1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eveniet officia architecto nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eaque, eveniet officia architecto nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eveniet officia architecto
+        nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio.
+
+    </div>
+    <!--  -->
+    <!-- background-clip:-content box -->
+
+    <div class="clip2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eveniet officia architecto nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Eaque, eveniet officia architecto nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, eveniet officia architecto
+        nihil corporis ab ut! Nesciunt fugiat nobis sed autem aperiam? Delectus, libero! Harum quam ab nemo commodi optio.
+
+    </div>
+
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>
